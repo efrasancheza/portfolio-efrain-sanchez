@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Logo from "../../assets/efrain.jpeg";
 
 const navLinks = [
-  { id: 1, name: "Home", href: "#home" },
-  { id: 2, name: "About", href: "#about" },
-  { id: 3, name: "Skill", href: "#skill" },
+  { id: 1, name: "About", href: "#about" },
+  { id: 2, name: "Skill", href: "#skill" },
+  { id: 3, name: "Project", href: "#project" },
   { id: 4, name: "Contact", href: "#contact" },
 ];
 
@@ -83,27 +83,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-
-        {/* Navegacion Redes  desktop */}
-        <div className="hidden md:block">
-          <ul className="flex sm:space-x-8 space-x-4">
-            {navSocialNetworks.map((social) => (
-              <li key={social.id}>
-                <a
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block transition-transform hover:scale-110 transform duration-300"
-                >
-                  <i
-                    className={`${social.icon} sm:text-2xl text-lg text-white hover:text-sky-400 transition-transform hover:scale-110
-                                transform inline-block duration-300`}
-                  ></i>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        
       </div>
 
       {/* Navegacion mobile */}
@@ -119,24 +99,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Redes sociales mobile */}
-        <ul className="flex space-x-4 px-4 py-2 justify-center border-t border-amber-50">
-          {navSocialNetworks.map((social) => (
-            <li key={social.id} className="py-2 text-center">
-              <a
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block"
-                onClick={() => setIsOpen(false)}
-              >
-                <i
-                  className={`${social.icon}  text-lg text-white hover:text-sky-400`}
-                ></i>
-              </a>
-            </li>
-          ))}
-        </ul>
+        
       </div>
     </nav>
   );
