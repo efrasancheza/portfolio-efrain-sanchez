@@ -26,8 +26,9 @@ export const Hero = () => {
         {/* Contenedor de texto + redes sociales */}
         <div className="flex flex-col items-center text-center order-2 md:order-1">
           <div className="mb-4">
-            <h1 className="text-4xl font-bold text-white">Hola! mi nombre es <span className="text-lime-400 hover:text-yellow-400" >Efraín Sánchez</span></h1>
-            <p className="mt-4 text-lg text-white">Desarrollo soluciones tecnológicas innovadoras</p>
+            <h1 className="text-6xl font-bold text-white">Hola! mi nombre es</h1>
+            <p ><span className="text-6xl font-bold text-lime-400 hover:text-yellow-400" >Efraín Sánchez</span></p>
+            <p className="mt-4 text-3xl text-white">Desarrollo soluciones tecnológicas innovadoras</p>
           </div>
           
           {/* Redes sociales - ahora debajo del texto en todos los dispositivos */}
@@ -41,7 +42,7 @@ export const Hero = () => {
                   className="inline-block transition-all hover:scale-110 duration-300"
                   aria-label={social.name}
                 >
-                  <i className={`${social.icon} text-2xl text-white hover:text-sky-400`}></i>
+                  <i className={`${social.icon} text-5xl text-white hover:text-sky-500`}></i>
                 </a>
               </li>
             ))}
